@@ -3,7 +3,7 @@ import { Award, Star, Trophy, GraduationCap } from "lucide-react";
 const milestones = [
   {
     icon: Award,
-    title: "Texas All-State 5A",
+    title: "Texas All-State",
     body: "Earned a seat in one of the most selective high school bands in the country.",
   },
   {
@@ -19,7 +19,7 @@ const milestones = [
   {
     icon: GraduationCap,
     title: "University of North Texas",
-    body: "Music degree from one of the country's foremost music schools.",
+    body: "Degree in Interdisciplinary Studies.",
   },
 ];
 
@@ -42,15 +42,16 @@ export default function About() {
               Eyoel has been making music for more than half his life. What
               began with a trombone in the sixth grade grew into a journey
               through some of the country&apos;s most demanding ensembles —
-              earning a seat in the Texas All-State 5A band, performing at
+              earning a seat in the Texas All-State band, performing at
               Carnegie Hall, and marching with the Santa Clara Vanguard of Drum
               Corps International.
             </p>
             <p>
-              Today he teaches piano in the North Texas area, holding a music
-              degree from the University of North Texas. He believes music has
-              the power to shape a life — and he hopes to pass that on to as
-              many students as possible.
+              Today he teaches piano in the North Texas area, holding a degree
+              in Interdisciplinary Studies from the University of North Texas.
+              He believes music is incredibly powerful — it transcends
+              language, connects people, and can even transform lives. He hopes
+              to pass that on to as many students as possible.
             </p>
           </div>
         </div>
