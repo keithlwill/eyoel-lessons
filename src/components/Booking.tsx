@@ -1,8 +1,8 @@
 import { Calendar, MessageSquare, Phone } from "lucide-react";
 
 const BOOKING_URL = "#";
-const PHONE_PRIMARY = "+15550100000";
-const PHONE_PRIMARY_DISPLAY = "(555) 010-0000";
+const PHONE_PRIMARY = "+14692885675";
+const PHONE_PRIMARY_DISPLAY = "(469) 288-5675";
 
 export default function Booking() {
   return (

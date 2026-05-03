@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Calendar, Home, ArrowRight } from "lucide-react";
 
 export default function Hero() {
@@ -55,17 +56,17 @@ export default function Hero() {
           <div className="lg:col-span-5">
             <div className="relative mx-auto aspect-[4/5] w-full max-w-sm lg:max-w-none">
               <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-amber-soft to-cream opacity-60" />
-              <div className="relative h-full w-full overflow-hidden rounded-[1.75rem] border border-border bg-gradient-to-br from-cream to-ivory shadow-xl">
-                <div className="flex h-full w-full items-center justify-center">
-                  <span className="font-serif text-8xl tracking-tight text-accent">
-                    EA
-                  </span>
-                </div>
+              <div className="relative h-full w-full overflow-hidden rounded-[1.75rem] border border-border bg-cream shadow-xl">
+                <Image
+                  src="/eyoel.png"
+                  alt="Eyoel Abera"
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover object-[65%_30%]"
+                  priority
+                />
               </div>
             </div>
-            <p className="mt-4 text-center text-xs uppercase tracking-[0.25em] text-muted lg:text-right">
-              Photo coming soon
-            </p>
           </div>
         </div>
       </div>

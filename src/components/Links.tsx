@@ -1,4 +1,3 @@
-import { Music, Disc3, Headphones } from "lucide-react";
 import type { ComponentType, SVGProps } from "react";
 
 type IconProps = SVGProps<SVGSVGElement> & { size?: number };
@@ -26,27 +25,6 @@ function InstagramIcon({ size = 20, ...props }: IconProps) {
   );
 }
 
-function YoutubeIcon({ size = 20, ...props }: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-      {...props}
-    >
-      <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
-      <path d="m10 15 5-3-5-3z" />
-    </svg>
-  );
-}
-
 type LinkItem = {
   label: string;
   href: string;
@@ -57,33 +35,15 @@ type LinkItem = {
 const links: LinkItem[] = [
   {
     label: "Instagram",
-    href: "https://instagram.com/",
+    href: "https://www.instagram.com/eyoel.abera/",
     icon: InstagramIcon,
-    hint: "Day-to-day",
+    hint: "@eyoel.abera",
   },
   {
-    label: "YouTube",
-    href: "https://youtube.com/",
-    icon: YoutubeIcon,
-    hint: "Performances",
-  },
-  {
-    label: "Spotify",
-    href: "https://open.spotify.com/",
-    icon: Disc3,
-    hint: "Listen",
-  },
-  {
-    label: "Apple Music",
-    href: "https://music.apple.com/",
-    icon: Music,
-    hint: "Listen",
-  },
-  {
-    label: "Beats",
-    href: "#",
-    icon: Headphones,
-    hint: "Originals",
+    label: "Instagram",
+    href: "https://www.instagram.com/eyo_music_/",
+    icon: InstagramIcon,
+    hint: "@eyo_music_",
   },
 ];
 
@@ -107,7 +67,7 @@ export default function Links() {
 
           <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:col-span-8">
             {links.map(({ label, href, icon: Icon, hint }) => (
-              <li key={label}>
+              <li key={href}>
                 <a
                   href={href}
                   target={href.startsWith("http") ? "_blank" : undefined}

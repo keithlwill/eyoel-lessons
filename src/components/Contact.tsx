@@ -1,10 +1,7 @@
-import { Mail, Phone, MapPin, AlertCircle } from "lucide-react";
+import { Phone, MapPin, AlertCircle } from "lucide-react";
 
-const PHONE_PRIMARY = "+15550100000";
-const PHONE_PRIMARY_DISPLAY = "(555) 010-0000";
-const PHONE_SECONDARY = "+15550100001";
-const PHONE_SECONDARY_DISPLAY = "(555) 010-0001";
-const EMAIL = "lessons@eyoelabera.com";
+const PHONE_PRIMARY = "+14692885675";
+const PHONE_PRIMARY_DISPLAY = "(469) 288-5675";
 
 export default function Contact() {
   return (
@@ -20,8 +17,8 @@ export default function Contact() {
             </h2>
             <p className="mt-6 text-base leading-relaxed text-foreground/70">
               Questions about lessons, scheduling, or whether the studio is a
-              fit? Reach out by phone, text, or email — Eyoel responds within
-              one business day.
+              fit? Reach out by phone or text — Eyoel responds within one
+              business day.
             </p>
 
             <div
@@ -54,46 +51,10 @@ export default function Contact() {
                 </span>
                 <span className="flex-1">
                   <span className="block text-xs uppercase tracking-[0.2em] text-muted">
-                    Primary phone
+                    Phone
                   </span>
                   <span className="mt-1 block font-serif text-xl text-foreground">
                     {PHONE_PRIMARY_DISPLAY}
-                  </span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href={`tel:${PHONE_SECONDARY}`}
-                className="group flex items-center gap-5 rounded-2xl border border-border bg-background px-6 py-5 transition-colors hover:border-accent"
-              >
-                <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-cream text-accent">
-                  <Phone size={20} />
-                </span>
-                <span className="flex-1">
-                  <span className="block text-xs uppercase tracking-[0.2em] text-muted">
-                    Secondary phone
-                  </span>
-                  <span className="mt-1 block font-serif text-xl text-foreground">
-                    {PHONE_SECONDARY_DISPLAY}
-                  </span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href={`mailto:${EMAIL}`}
-                className="group flex items-center gap-5 rounded-2xl border border-border bg-background px-6 py-5 transition-colors hover:border-accent"
-              >
-                <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-cream text-accent">
-                  <Mail size={20} />
-                </span>
-                <span className="flex-1">
-                  <span className="block text-xs uppercase tracking-[0.2em] text-muted">
-                    Email
-                  </span>
-                  <span className="mt-1 block break-all font-serif text-xl text-foreground">
-                    {EMAIL}
                   </span>
                 </span>
               </a>
@@ -107,7 +68,7 @@ export default function Contact() {
                   Service area
                 </span>
                 <span className="mt-1 block font-serif text-xl text-foreground">
-                  Greater Metro Area
+                  North Texas area
                 </span>
               </span>
             </li>
